@@ -1,0 +1,98 @@
+<!--
+	Author: Justin Mosier
+	Class: CSC 3750
+	Assignment: Homework 1
+	Date: 9/7/2018
+-->
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Founding Fathers Quiz</title>
+	</head>
+
+	<body>
+		<table border = "1">
+		<form method = "get" >
+		<thead>
+			<tr>
+				
+				<th colspan = 2>
+				Founding Fathers Quiz</th>
+				
+			</tr>
+		</thead>
+		
+		<tbody>
+			<tr>
+				<td>1.</td>
+				<td>Which of these founding fathers was not a President?<br>
+				<label>
+					<input name = "qOne" type = "radio"
+					value = "washingon" checked>George Washington
+				</label><br>
+				<label>
+					<input name = "qOne" type = "radio"
+					value = "franklin">Benjamin Franklin
+				</label><br>
+				<label>
+					<input name = "qOne" type = "radio"
+					value = "jefferson">Thomas Jefferson
+				</label><br>
+				<label>
+					<input name = "qOne" type = "radio"
+					value = "madison">James Madison
+				</label>					
+			</tr>
+			<tr>
+				<td>2.</td>
+				<td>Which of the following are considered a founding father? Check all that apply:<br>
+				<label>
+					<input name = "qTwo" type = "checkbox" 
+					value = "hamilton">Alexander Hamilton
+				</label><br>
+				<label>
+					<input name = "qTwo" type = "checkbox" 
+					value = "jackson">Michael Jackson
+				</label><br>
+				<label>
+					<input name = "qTwo" type = "checkbox" 
+					value = "star">Ringo Star
+				</label><br><label>
+					<input name = "qTwo" type = "checkbox" 
+					value = "adams">John Adams
+				</label><br>
+			</tr>
+			<tr>
+				<td>3.</td>
+				<td>Which founding father authored the Declaration of Independence?<br>
+					<input name = "qThree" type = "text" size = "50">
+				</td>
+			</tr>
+			<tr>
+				<td>4.</td>
+				<td>According to most historians, how many founding fathers were there?<br>
+					<input type = "number"
+						min = "0"
+						max = "10"
+						step = "1"
+						value = "0"/>
+				</td>
+		</tbody>			
+		</table>
+		
+		<br><p>Enter your information if you want to receive updates.</p>
+			<p><label>Name: <input name = "name" type = "text" placeholder = "Enter you name." required>
+				</label><br>
+			<label>Email: <input email = "email" type = "email" placeholder = "name@domain.com" required>
+			</label><br>
+			<label>Phone: <input phone = "phone" type = "tel" placeholder = "xxx-xxx-xxxx" 
+                  pattern = "\d{3}-+\d{3}-\d{4}" required>
+			</p><br>
+			
+			<p><input type = "submit" value = "Submit" />
+            <input type = "reset" value = "Clear" /></p> 
+		</form>
+	</body>
+</html>
